@@ -5,6 +5,8 @@ let button = document.querySelector('.comment');
 let result = document.querySelector('#result');
 
 button.addEventListener('click', (e) => {
+    
+    e.preventDefault();
 
     if (userName.value === '') return;
     if (date.value === '') date.value = new Date().toISOString().split('T')[0];
